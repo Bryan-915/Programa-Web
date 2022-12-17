@@ -1,0 +1,124 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Subtema4.4</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body background="Programacion2.jpg" background-repeat="no-repeat" background-size="cover">
+        <bilnk><marquee><h1>Bienvenido a mi Pagina Web</h1></marquee> </bilnk>
+        <br><h1>Programacion Web</h1></br>
+        <header>
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="#">Unidad 1</a>
+
+                    <ul class="submenu">
+                        <li><a href="Subtema1.1.html">1.1 Evolución de las aplicaciones web.</a></li>
+                        <li><a href="Subtema1.2.html">1.2 Arquitectura de las aplicaciones web.</a></li>
+                        <li><a href="Subtema1.3.html">1.3 Tecnologías para el desarrollo de aplicaciones web.</a></li>
+                        <li><a href="Subtema1.4.html">1.4 Planificación de aplicaciones web.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 2</a>
+                    <ul class="submenu 2">
+                        <li><a href="Subtema2.1.html">2.1 Introducción.</a></li>
+                        <li><a href="Subtema2.2.html">2.2 Estructura global de un documento Web.</a></li>
+                        <li><a href="Subtema2.3.html">2.3 Elementos básicos: texto, vínculos, listas, tablas, objetos, imágenes y aplicaciones.</a></li>
+                        <li><a href="Subtema2.4.html">2.4 Formularios.</a></li>
+                        <li><a href="Subtema2.5.html">2.5 Lenguajes de presentación en documentos Web.</a></li>
+                        <li><a href="Subtema2.6.html">2.6 Selectores.</a></li>
+                        <li><a href="Subtema2.7.html">2.7 Modelo de caja.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 3</a>
+                    <ul class="submenu">
+                        <li><a href="Subtema3.1.html">3.1 Introducción al lenguaje.</a></li>
+                        <li><a href="Subtema3.2.html">3.2 Manejo de Frameworks.</a></li> 
+                        <li><a href="Subtema3.3.html">3.3 Estructuras de Control.</a></li>
+                        <li><a href="Subtema3.4.html">3.4 Manipulación de objetos.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 4</a>
+                    <ul class="submenu">
+                        <li><a href="Subtema4.1.html">4.1 Introducción al lenguaje.</a></li>
+                        <li><a href="Subtema4.2.html">4.2 Estructuras de Control.</a></li>
+                        <li><a href="Subtema4.3.html">4.3 Tratamiento de Formularios.</a></li>
+                        <li><a href="Subtema4.4.html">4.4 Manejo de objetos del servidor.</a></li>
+                        <li><a href="Subtema4.5.html">4.5 Creación de clases.</a></li>
+                        <li><a href="Subtema4.6.html">4.6 Acceso a datos.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 5</a>
+                    <ul class="submenu">
+                        <li><a href="Subtema5.1.html">5.1 Conceptos generales.</a></li>
+                        <li><a href="Subtema5.2.html">5.2 Tipos de Servicios en la nube.</a></li>
+                        <li><a href="Subtema5.3.html">5.3 Patrones de diseño.</a></li>
+                        <li><a href="Subtema5.4.html">5.4 Estándares en servicios.</a></li>
+                        <li><a href="Subtema5.5.html">5.5 Plataformas tecnológicas.</a></li>
+                        <li><a href="Subtema5.6.html">5.6 Seguridad e interoperabilidad.</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>        </header>
+        <h1> 4.4 Manejo de objetos del servidor.</h1>
+        <center><img src="4.4.png" width=600; height=500; ALIGN=center></img></center>
+        <br></br>
+        <p>Objetivo especifico: Describir el manejo de los objetos en el lado del servidor.
+            ADO.NET está diseñado para cargar datos desde una fuente de datos y trabajar con esos datos en modo 
+            desconectado. Este estado de desconexion permite al frmulario Web Form operar de forma 
+            semi-independiente de las fuentes de datos , reduciendo asi el trafico de la red. ADO.NET utiliza 
+            Extensible Markup Language (XML) como formato universal de transmicion de datos, lo cual garantiza la 
+            interoperabilidad con cualquier plataforma donde este disponible un parser XML .            
+            </p>
+        <p>Los objetos DataSet y DataReader son comunmente utilizados para acceder a los datos.
+            Los objetos DataSet son objetos complejos que nos permiten almacenar multiples tabals de datos 
+            DataTables desde la funete de datos, los objetos DataSet son como una base de datos virtual ubicada 
+            dentro de la aplicaion Web, los objetos DataSet tambien pueden contener relaciones entre los datos de 
+            la DataTables, y pueden utilizar esas relaciones para recuperar datos.                           
+            </p>
+        <p>Los objetos DataReader son objetos ligeros que se utilizan para leer datos desde una fuente de datos; 
+            los objetos DataReader proporciona acceso solamente hacia adelante (forward-only) y de solo lectura 
+            (read-only) a los datos de la base de datos.
+            La eleccion entre utilizar objetos DataSet u objetos DataReader deberia basarse  el el uso privisto 
+            para los datos, normalmente, los objetos DataReader se utilizan para leer datos en situaciones en la 
+            que es necesario el acceso a unica vez, y de solo lectura, como cuando accedos a una contraseña 
+            almacenada, o se complementan un control enlazado en la lista, los objetos DataSet se utilizan para al 
+            acceso para datos mas complejos, como el acceso a toda el historial de pedidos del cliente.             
+            </p>               
+        <center><img src="4.4 Manejo de objetos del servidor(1).jpg" width=600; height=500; ALIGN=center></img></center>
+        <br></br>    
+        <p>Algunos de los aspectos relativos del acceso a datos que se que se deben tener en cuenta a la hora de 
+            decidir entre los objetos DataSet y objetos DataReader incluyen:
+            </p>
+        <ul>
+            <li>•	Acceso a datos. si nuestra intención es leer y escribir a nuestra fuente de datos, debemos 
+                utilizar un objeto DataSet, los objetos DataReader son conexiones de sólo lectura y deberían 
+                utilizarse únicamente cuando los datos vayan a utilizarse en una situación de sólo lectura.</li>
+            <li>•	Acceso a múltiples bases de datos. Si nuestra intención es combinar tablas de una o más bases 
+                de datos, debemos utilizar un objeto DataSet, los objetos DataReader se basan en una única 
+                instrucción SOL de una sola base de datos.</li>
+            <li>•	Enlace a controles. Si nuestra intención es enlazar los datos a más de un control, debemos 
+                utilizar un objeto DataSet, los objetos DataReader sólo pueden vincularse a un único control.</li>
+            <li>•	Modo conexión. Si nuestra intención es trabajar en un modo desconectado, debemos utilizar un 
+                objeto DataSet, los objetos DataReader deben ejecutarseen modo conectado.</li>
+            <li>•	Búsqueda de datos. Si nuestra intención es buscar los datoshacia atrás y hacia delante, debemos 
+                utilizar un objeto DataSet, los objetos DataReader buscan hacia adelante a medida que los datos 
+                fluyen desde la base de datos.</li>
+            <li>•	Velocidad de acceso. Si necesitamos acceso de alta velocidad a nuestra fuente de datos, 
+                utilizaremos un objeto DataReader, los objetos DataSet son más lentos que los objetos DataReader 
+                en el acceso a una base de datos, debido a que los objetos DataSet almacenan los datos en un objeto 
+                del servidor Web, también la sobrecarga es mayor en la creación del objeto DataSet debido a la 
+                capacidad de leer y escribir datos y búsqueda hacia delante y hacia atrás, los objetos DataReader son 
+                más rápidos debido a la naturaleza del objeto más ligera, hay muy poca sobrecarga para el objeto 
+                DataReader, ya que éste trabaja sólo hacia delante y sólo de lectura.</li>
+            <li>•	Soporte de herramientas. Si nuestra intención es utilizar Microsoft Visual Studio®.NET para 
+                crear la conexión a datos, utilizaremos objeto DataSet, con los objetos DataSet, podemos elegir 
+                entre escribir nuestro propio código o utilizar el código máquina de Visual Studio NET, con los 
+                objetos DataReader, debemos escribir todo el código de soporte.</li>
+        </ul>
+        <center><img src="4.4 Manejo de objetos del servidor.webp" width=600; height=500; ALIGN=center></img></center>
+        <br></br>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/r70-Q9htEe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+        <br></br>
+    </body>
+</html>

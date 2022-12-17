@@ -1,0 +1,125 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Subtema4.5</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body background="Programacion2.jpg" background-repeat="no-repeat" background-size="cover">
+        <bilnk><marquee><h1>Bienvenido a mi Pagina Web</h1></marquee> </bilnk>
+        <br><h1>Programacion Web</h1></br>
+        <header>
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="#">Unidad 1</a>
+
+                    <ul class="submenu">
+                        <li><a href="Subtema1.1.html">1.1 Evolución de las aplicaciones web.</a></li>
+                        <li><a href="Subtema1.2.html">1.2 Arquitectura de las aplicaciones web.</a></li>
+                        <li><a href="Subtema1.3.html">1.3 Tecnologías para el desarrollo de aplicaciones web.</a></li>
+                        <li><a href="Subtema1.4.html">1.4 Planificación de aplicaciones web.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 2</a>
+                    <ul class="submenu 2">
+                        <li><a href="Subtema2.1.html">2.1 Introducción.</a></li>
+                        <li><a href="Subtema2.2.html">2.2 Estructura global de un documento Web.</a></li>
+                        <li><a href="Subtema2.3.html">2.3 Elementos básicos: texto, vínculos, listas, tablas, objetos, imágenes y aplicaciones.</a></li>
+                        <li><a href="Subtema2.4.html">2.4 Formularios.</a></li>
+                        <li><a href="Subtema2.5.html">2.5 Lenguajes de presentación en documentos Web.</a></li>
+                        <li><a href="Subtema2.6.html">2.6 Selectores.</a></li>
+                        <li><a href="Subtema2.7.html">2.7 Modelo de caja.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 3</a>
+                    <ul class="submenu">
+                        <li><a href="Subtema3.1.html">3.1 Introducción al lenguaje.</a></li>
+                        <li><a href="Subtema3.2.html">3.2 Manejo de Frameworks.</a></li> 
+                        <li><a href="Subtema3.3.html">3.3 Estructuras de Control.</a></li>
+                        <li><a href="Subtema3.4.html">3.4 Manipulación de objetos.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 4</a>
+                    <ul class="submenu">
+                        <li><a href="Subtema4.1.html">4.1 Introducción al lenguaje.</a></li>
+                        <li><a href="Subtema4.2.html">4.2 Estructuras de Control.</a></li>
+                        <li><a href="Subtema4.3.html">4.3 Tratamiento de Formularios.</a></li>
+                        <li><a href="Subtema4.4.html">4.4 Manejo de objetos del servidor</a></li>
+                        <li><a href="Subtema4.5.html">4.5 Creación de clases.</a></li>
+                        <li><a href="Subtema4.6.html">4.6 Acceso a datos.</a></li>
+                    </ul>
+                </li>
+                    <li><a href="#">Unidad 5</a>
+                    <ul class="submenu">
+                        <li><a href="Subtema5.1.html">5.1 Conceptos generales.</a></li>
+                        <li><a href="Subtema5.2.html">5.2 Tipos de Servicios en la nube.</a></li>
+                        <li><a href="Subtema5.3.html">5.3 Patrones de diseño.</a></li>
+                        <li><a href="Subtema5.4.html">5.4 Estándares en servicios.</a></li>
+                        <li><a href="Subtema5.5.html">5.5 Plataformas tecnológicas.</a></li>
+                        <li><a href="Subtema5.6.html">5.6 Seguridad e interoperabilidad.</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>        </header>
+        <h1>4.5 Creación de clases.</h1>
+        <p>Debemos crear una clase, que recordamos que es algo así como la definición de un objeto con sus 
+            propiedades y métodos. Para crear la clase debemos escribir una función especial, que se encargará de 
+            construir el objeto en memoria e inicializarlo. Esta función se le llama constructor en la 
+            terminología de la programación orientada a objetos.
+            </p>
+        <center><img src="4.5 Creación de clases.png" width=600; height=300; ALIGN=center></img></center>
+        <br></br>
+        <p>Eso era un constructor. Utiliza la palabra this para declarar las propiedades y métodos del objeto que 
+            se está construyendo. This hace referencia al objeto que se está construyendo, pues recordemos que a 
+            esta función la llamaremos para construir un objeto. A ese objeto que se está construyendo le vamos 
+            asignando valores en sus propiedades y también le vamos asignando nombres de funciones definidas para 
+            sus métodos. Al construir un objeto técnicamente es lo mismo declarar una propiedad o un método, solo 
+            difiere en que a una propiedad le asignamos un valor y a un método le asignamos una función.              
+            </p>
+        <p>Constructor: Colocamos propiedades
+            Veamos cómo definir el constructor de la clase Alumnouniversitario, pero solamente vamos a colocar por 
+            ahora las propiedades de la clase.
+            </p>
+        <center><img src="4.5 Creación de clases(1).png" width=600; height=300; ALIGN=center></img></center>
+        <br></br>    
+        <p>Los valores de inicialización los recibe el constructor como parámetros, en este caso es sólo el nombre 
+            y la edad, porque el número de matrícula no lo recibe un alumno hasta que es matriculado. Es por ello 
+            que asignamos null a la propiedad numMatrícula.</p>
+        <p>Escribir métodos
+            Ahora vamos a continuar con esa definición de la clase para incorporar métodos.
+            Para construir un método debemos crear una función. Una función que se construye con intención de que 
+            sea un método para una clase puede utilizar también la variable this, que hace referencia al objeto 
+            sobre el que invocamos el método. Pues debemos recordar que para llamar a un método debemos tener un 
+            objeto y this hace referencia a ese objeto.            
+            </p>          
+        <center><img src="4.5 Creación de clases(2).png" width=600; height=200; ALIGN=center></img></center>
+        <br></br>             
+        <p>La función matricular recibe un número de matrícula por parámetro y lo asigna a la propiedad 
+            numMatricula del objeto que recibe este método. Así rellenamos el la propiedad del objeto que nos 
+            faltaba.
+            </p>
+            <center><img src="4.5 Creación de clases(3).png" width=600; height=300; ALIGN=center></img></center>
+            <br></br>                 
+        <p>Esta función va imprimiendo todas las propiedades del objeto que recibe el método.
+            Constructor: Colocamos métodos
+            Para colocar un método en una clase debemos asignar la función que queremos que sea el método al 
+            objeto que se está creando. Veamos cómo quedaría el constructor de la clase AlumnoUniversitario con el 
+            método matricular.
+            </p>
+        <center><img src="4.5 Creación de clases(4).png" width=600; height=300; ALIGN=center></img></center>
+        <br></br>                 
+        <p>Para instanciar objetos de la clase AlumnoUniversitario utilizamos la sentencia new, que ya hemos 
+            tenido ocasión de ver en otras ocasiones.</p>
+        <center><img src="4.5 Creación de clases(5).png" width=600; height=100; ALIGN=center></img></center>
+        <br></br>                     
+        <p>Trabajando con la clase, creando instancias y usando objetos
+            Para ilustrar el trabajo con objetos y terminar con el ejemplo del AlunnoUniversitario, vamos a ver 
+            todo este proceso en un solo script en el que definiremos la clase y luego la utilizaremos un 
+            poquito.</p>
+            <center><img src="4.5 Creación de clases(6).png" width=600; height=500; ALIGN=center></img></center>
+            <center><img src="4.5 Creación de clases(7).png" width=600; height=500; ALIGN=center></img></center>
+            <center><img src="4.5 Creación de clases(8).png" width=600; height=500; ALIGN=center></img></center>
+            <br></br>                             
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/oMWrJwMPd6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+            <br></br>
+    </body>
+</html>
